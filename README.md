@@ -1,1 +1,1 @@
-![plan](../public/theplan.jpg)
+![plan](./public/theplan.jpg)
