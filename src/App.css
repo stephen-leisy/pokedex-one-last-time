@@ -76,3 +76,6 @@ li {
   width: 100%;
 
 }
+label {
+  display: block;
+}

@@ -64,9 +64,7 @@ export default class SearchPage extends Component {
 
 
         const uniquePokeType = [...new Set(pokemen.map(pokemon => pokemon.type_1))];
-        console.log(uniquePokeType)
-        console.log(this.state.groupBY)
-        console.log(pokemen[0].type_1)
+
         const filteredSearch = pokemen.filter((pokemon) => {
             if (!this.state.userQuery && !this.state.groupBY) return true;
 
@@ -76,11 +74,6 @@ export default class SearchPage extends Component {
             if (pokemon.type_1 === this.state.groupBY && !this.state.userQuery) return true;
 
             if (pokemon.pokemon.includes(this.state.userQuery) && pokemon.type_1 === this.state.groupBY) return true;
-
-            // if (this.state.sortOrder && !this.state.userQuery) {
-
-
-            // }
 
             return false;
 
@@ -97,7 +90,6 @@ export default class SearchPage extends Component {
                         {this.state.userQuery}
                         <Dropdown currentValue={this.state.sortOrder} handleChanges={this.handlerDirectionSort} options={['Ascend', 'Descend']} />
                         <Dropdown currentValue={this.state.sortBy} handleChanges={this.handlerSortBy} options={['pokemon', 'type_1']} />
-                        {/* <Dropdown currentValue={this.state.pokeType} handleChanges={this.handlerType} options={uniquePokeType} /> */}
                         <SearchCategory filteredType={uniquePokeType} value={this.state.groupBy} handleChanges={this.handlerGroupBy} />
 
                     </div>

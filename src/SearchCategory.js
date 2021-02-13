@@ -5,15 +5,15 @@ export default class SearchCategory extends Component {
         return (
             <>
 
-                <label htmlFor='bug'>{this.props.filteredType[4]}</label>
+                <label htmlFor='bug'>BUG</label>
                 <input id='bug' type="radio" name="group" value="bug" onChange={this.props.handleChanges} />
-                <label htmlFor='fire'>{this.props.filteredType[3]}</label>
+                <label htmlFor='fire'>FIRE</label>
                 <input id='fire' type="radio" name="group" value="fire" onChange={this.props.handleChanges} />
-                <label htmlFor='grass'>{this.props.filteredType[2]}</label>
+                <label htmlFor='grass'>GRASS</label>
                 <input id="grass" type="radio" name="group" value="grass" onChange={this.props.handleChanges}></input>
-                <label htmlFor='normal'>{this.props.filteredType[1]}</label>
+                <label htmlFor='normal'>NORMAL</label>
                 <input id="normal" type="radio" name="group" value="normal" onChange={this.props.handleChanges}></input>
-                <label htmlFor='water'>{this.props.filteredType[0]}</label>
+                <label htmlFor='water'>WATER</label>
                 <input id='water' type="radio" name="group" value="water" onChange={this.props.handleChanges}></input>
 
 
