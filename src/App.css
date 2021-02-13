@@ -71,3 +71,8 @@ li {
   flex-direction: column;
   background-color: thistle;
 }
+.home-image {
+  height: 100%;
+  width: 100%;
+
+}
