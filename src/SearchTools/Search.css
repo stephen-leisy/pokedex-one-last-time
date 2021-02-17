@@ -16,7 +16,7 @@ body {
 }
 .side-bar {
     min-width: 100px;
-    max-width: 100px;
+    max-width: 120px;
     min-height: 900px;
     background-color: lightgreen;
     border: solid 2px black;
@@ -36,3 +36,10 @@ img {
 .content-area {
     list-style: none;
 }
+.spinner-thing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
