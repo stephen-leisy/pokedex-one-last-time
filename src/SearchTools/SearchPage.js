@@ -113,7 +113,7 @@ export default class SearchPage extends Component {
 
                 <div className="side-bar">
                     <div className='search-bar'>
-                        <Searchbar type={'text'} value={this.state.userQuery} onChange={this.HandlerUserQuery} />
+                        <Searchbar className="search-bar-solo" type={'text'} value={this.state.userQuery} onChange={this.HandlerUserQuery} />
                         {/* {this.state.userQuery} */}
 
                         <Dropdown currentValue={this.state.sortOrder} handleChanges={this.handlerDirectionSort} options={['asc', 'desc']} />
@@ -136,13 +136,17 @@ export default class SearchPage extends Component {
                         ? <Spinner className='spinner-thing' />
                         :
 
-                        <div>
-                            <button onClick={this.handleBackClick} disabled={this.state.pageNumber === 1}>back</button>
-                            <button onClick={this.handleForwardClick} disabled={this.state.pageNumber === lastPage}>forward</button>
-                            Page {this.state.pageNumber}
+                        <div className='page-buttons'>
+                            <div>
+                                <button onClick={this.handleBackClick} disabled={this.state.pageNumber === 1}>back</button>
+                                <button onClick={this.handleForwardClick} disabled={this.state.pageNumber === lastPage}>forward</button>
+                           Page {this.state.pageNumber}
+                            </div>
+
                             <ul>
                                 <PokeList filteredSearch={this.state.pokemon} />
                             </ul>
+
                         </div>
                     }
                 </div>

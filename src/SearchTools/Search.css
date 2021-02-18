@@ -21,12 +21,18 @@ body {
     background-color: lightgreen;
     border: solid 2px black;
     border-radius: 15px;
+    position: fixed;
+    margin-top: 66px;
 }
 .content-area {
     width: 100%;
     min-height: 900px;
     background-color: violet;
-   
+    margin-top: 80px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 40px;
 }
 img {
     height: 120px;
@@ -41,5 +47,20 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  .search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .page-buttons {
+    display: flex;
+    align-items: center;
+    /* margin-top: 100px; */
+    justify-content: center; 
+    flex-direction: column;
+      
   }
   

@@ -28,7 +28,7 @@ export default class PokemonDetail extends Component {
                 {this.state.loading
                     ? <Spinner className='spinner-thing' />
                     :
-                    <div>
+                    <div className="poke-item-detail-parent">
                         <h1>{this.state.pokemonData.pokemon}</h1>
                         <img src={this.state.pokemonData.url_image} alt='pokemon' />
 
