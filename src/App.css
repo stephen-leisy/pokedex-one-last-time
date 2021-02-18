@@ -39,14 +39,29 @@
 .selected {
   background-color: aquamarine;
 }
-
+.poke-item-detail-parent {
+  position: fixed;
+  width: 700px;
+  left: 15%;
+  right: 50%;
+  border: solid 10px chartreuse;
+  margin-top: 100px;
+  background-color: greenyellow;
+  
+  
+}
 header {
   text-align: right;
   background-color:deeppink;
   height: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: fixed;
+  border: solid 2px whitesmoke;
+  border-radius: 15px;
+  margin-right: 30px;
 }
 .nav-button {
   border: solid 2px black;
@@ -69,7 +84,8 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: thistle;
+  background-color: chartreuse;
+  
 }
 .home-image {
   height: 100%;
@@ -78,4 +94,12 @@ li {
 }
 label {
   display: block;
+}
+
+.everything-together {
+  background-color: hotpink;
+  min-height: 800px;
+}
+.search-input {
+  width: 75%;
 }

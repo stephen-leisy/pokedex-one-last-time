@@ -5,7 +5,7 @@ export default class Dropdown extends Component {
         return (
             <select value={this.props.currentValue} onChange={this.props.handleChanges}>
                 {
-                    this.props.options.map(pokemon => <option value={pokemon}>{pokemon}</option>)
+                    this.props.options.map(pokemon => <option value={pokemon.value}>{pokemon.textContent}</option>)
                 }
 
             </select>

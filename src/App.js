@@ -10,17 +10,18 @@ import {
 } from 'react-router-dom';
 import Home from './Home.js';
 import SearchPage from './SearchTools/SearchPage.js';
+import PokemonDetail from './PokemonDetail.js';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className='everything-together'>
         <div>
 
           <Router>
-            <header>
+            <header className='header-style'>
               <NavLink exact className='nav-button' activeClassName='selected' to='/'>HOLMES</NavLink>
-              <NavLink exact className='nav-button' activeClassName='selected' to='/search'>SEARCH PAGE</NavLink>
+              <NavLink exact className='nav-button' activeClassName='selected' to='/pokemon'>SEARCH PAGE</NavLink>
             </header>
             <Switch>
               <Route
@@ -29,9 +30,14 @@ export default class App extends Component {
                 render={(routerProps) => <Home {...routerProps} />}
               />
               <Route
-                path="/search"
+                path="/pokemon"
                 exact
                 render={(routerProps) => <SearchPage {...routerProps} />}
+              />
+              <Route
+                path="/pokemon/:pokemonName"
+                exact
+                render={(routerProps) => <PokemonDetail {...routerProps} />}
               />
             </Switch>
           </Router>
