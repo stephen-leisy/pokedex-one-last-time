@@ -116,8 +116,8 @@ export default class SearchPage extends Component {
                         <Searchbar className="search-bar-solo" type={'text'} value={this.state.userQuery} onChange={this.HandlerUserQuery} />
                         {/* {this.state.userQuery} */}
 
-                        <Dropdown currentValue={this.state.sortOrder} handleChanges={this.handlerDirectionSort} options={['asc', 'desc']} />
-                        <Dropdown currentValue={this.state.sortBy} handleChanges={this.handlerSortBy} options={['pokemon', 'type_1']} />
+                        <Dropdown currentValue={this.state.sortOrder} handleChanges={this.handlerDirectionSort} options={[{ value: 'asc', textContent: 'Ascending' }, { value: 'desc', textContent: 'Descending' }]} />
+                        <Dropdown currentValue={this.state.sortBy} handleChanges={this.handlerSortBy} options={[{ value: 'pokemon', textContent: 'Pokemon' }, { value: 'type_1', textContent: 'Type' }]} />
                         <select onChange={this.handlePerPage}>
                             <option value={20}>20</option>
                             <option value={50}>50</option>
