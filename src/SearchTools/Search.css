@@ -18,11 +18,12 @@ body {
     min-width: 100px;
     max-width: 120px;
     min-height: 900px;
-    background-color: lightgreen;
+    background-color: chartreuse;
     border: solid 2px black;
     border-radius: 15px;
     position: fixed;
     margin-top: 66px;
+    margin-left: 5px;
 }
 .content-area {
     width: 100%;

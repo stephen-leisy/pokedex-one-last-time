@@ -59,6 +59,9 @@ header {
   align-items: center;
   justify-content: flex-end;
   position: fixed;
+  border: solid 2px whitesmoke;
+  border-radius: 15px;
+  margin-right: 30px;
 }
 .nav-button {
   border: solid 2px black;
@@ -81,7 +84,8 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: thistle;
+  background-color: chartreuse;
+  
 }
 .home-image {
   height: 100%;
